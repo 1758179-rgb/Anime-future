@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Hub - Discover Your Next Favorite Anime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🎌 Anime Hub</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#genres">Genres</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Anime Hub</h1>
+            <p>Discover the best anime series and movies from around the world</p>
+            <button class="cta-btn">Start Exploring</button>
+        </div>
+    </section>
+
+    <section id="popular" class="popular">
+        <div class="container">
+            <h2>Popular Anime</h2>
+            <div class="anime-grid" id="animeGrid">
+                <!-- Anime cards will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="genres" class="genres">
+        <div class="container">
+            <h2>Browse by Genre</h2>
+            <div class="genre-list">
+                <button class="genre-btn" onclick="filterByGenre('Action')">Action</button>
+                <button class="genre-btn" onclick="filterByGenre('Drama')">Drama</button>
+                <button class="genre-btn" onclick="filterByGenre('Comedy')">Comedy</button>
+                <button class="genre-btn" onclick="filterByGenre('Sci-Fi')">Sci-Fi</button>
+                <button class="genre-btn" onclick="filterByGenre('Fantasy')">Fantasy</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Anime Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
