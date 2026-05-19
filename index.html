@@ -10,20 +10,20 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">🎌 Anime Hub</div>
+            <input type="text" id="searchInput" class="search-bar" placeholder="Search anime...">
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#popular">Popular</a></li>
                 <li><a href="#genres">Genres</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to Anime Hub</h1>
-            <p>Discover the best anime series and movies from around the world</p>
-            <button class="cta-btn">Start Exploring</button>
+            <h1>🎌 Welcome to Anime Hub</h1>
+            <p>Discover the best anime series and movies</p>
+            <p class="subtitle">Quality over Quantity - Premium Anime Collection</p>
         </div>
     </section>
 
@@ -39,30 +39,24 @@
     <section id="genres" class="genres">
         <div class="container">
             <h2>Browse by Genre</h2>
-            <div class="genre-list">
-                <button class="genre-btn" onclick="filterByGenre('Action')">Action</button>
-                <button class="genre-btn" onclick="filterByGenre('Drama')">Drama</button>
-                <button class="genre-btn" onclick="filterByGenre('Comedy')">Comedy</button>
-                <button class="genre-btn" onclick="filterByGenre('Sci-Fi')">Sci-Fi</button>
-                <button class="genre-btn" onclick="filterByGenre('Fantasy')">Fantasy</button>
+            <div class="genre-list" id="genreList">
+                <!-- Genre buttons will be populated here -->
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get in Touch</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+    <!-- Modal for Anime Details -->
+    <div id="animeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modalBody">
+                <!-- Anime details will be populated here -->
+            </div>
         </div>
-    </section>
+    </div>
 
     <footer class="footer">
-        <p>&copy; 2026 Anime Hub. All rights reserved.</p>
+        <p>&copy; 2026 Anime Hub. All rights reserved. | Quality Anime Platform</p>
     </footer>
 
     <script src="script.js"></script>
