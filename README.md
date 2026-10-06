@@ -1,4 +1,4 @@
-# 🎌 Anime Hub - Premium Quality Anime Platform
+# 🎌 Anime future - Premium Quality Anime Platform
 
 A beautifully designed, responsive anime discovery platform featuring curated high-quality anime with detailed episode information. **Quality over quantity** is our philosophy.
 
